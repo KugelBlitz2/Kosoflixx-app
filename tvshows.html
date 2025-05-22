@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KosoFlix - TV Shows</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <header>
+        <div class="header-content">
+          <div class="logo-container">
+            <svg
+              class="logo-icon"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M19.82 2H4.18C2.97 2 2 2.97 2 4.18v15.64C2 21.03 2.97 22 4.18 22h15.64c1.21 0 2.18-.97 2.18-2.18V4.18C22 2.97 21.03 2 19.82 2z"
+              />
+              <path d="M7 2v20" />
+              <path d="M17 2v20" />
+              <path d="M2 12h20" />
+              <path d="M2 7h5" />
+              <path d="M2 17h5" />
+              <path d="M17 17h5" />
+              <path d="M17 7h5" />
+            </svg>
+            <h1 class="logo">KosoFlix</h1>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html" id="home-link">Home</a></li>
+              <li><a href="movies.html" id="movies-link">Movies</a></li>
+              <li>
+                <a href="tvshows.html" class="active" id="tvshows-link"
+                  >TV Shows</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="hero-section">
+        <div class="hero-content">
+          <h2>Binge-worthy TV Shows</h2>
+          <p>The best series from around the world</p>
+        </div>
+      </div>
+
+      <main>
+        <section class="category-section">
+          <h2 class="category-title">Popular TV Shows</h2>
+          <div class="tvshow-grid content-grid">
+            <!-- TV Show cards will be dynamically populated -->
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          &copy; <span id="current-year"></span> KosoFlix. All rights reserved.
+        </p>
+      </footer>
+    </div>
+
+    <div class="modal" id="tvshow-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="tvshow-title">Show Title</h3>
+          <button id="tvshow-close-btn" class="close-btn" aria-label="Close">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="video-container">
+          <iframe id="tvshow-video-frame" allowfullscreen></iframe>
+        </div>
+        <div class="episode-container">
+          <select class="season-selector" id="season-selector">
+            <!-- Season options will be dynamically populated -->
+          </select>
+          <div class="episodes-grid" id="episodes-grid">
+            <!-- Episode items will be dynamically populated -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="poop.js"></script>
+  </body>
+</html>
