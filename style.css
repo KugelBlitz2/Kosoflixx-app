@@ -175,19 +175,25 @@ main {
 .cta-button.primary {
   background-color: #e50914;
   color: white;
+  transition: all 0.5s ease-in-out;
 }
 
 .cta-button.primary:hover {
   background-color: #f40d19;
+  border-radius: 50px;
+  transform: scale(1.1);
 }
 
 .cta-button.secondary {
   background-color: #333;
   color: white;
+  transition: all 0.5s ease-in-out;
 }
 
 .cta-button.secondary:hover {
   background-color: #444;
+  border-radius: 50px;
+  transform: scale(1.1);
 }
 
 /* Content Grids */
